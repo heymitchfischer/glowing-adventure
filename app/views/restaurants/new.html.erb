@@ -1,0 +1,6 @@
+<h3>Create a new Restaurant Account</h3>
+
+<%= simple_form_for(@restaurant) do |form|  %>
+  <%= form.input(:name, hint: "Name must be between 2 and 30 characters", html: {class: "form-control", minlength: 2, maxlength: 30}) %>
+  <%= form.submit("Create restaurant", class: "btn btn-primary") %>
+<% end %>
